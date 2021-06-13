@@ -50,7 +50,6 @@ module.exports = {
         },
       },
       rules: {
-        'jsx-a11y/accessible-emoji': 'error',
         'jsx-a11y/alt-text': 'error',
         'jsx-a11y/anchor-has-content': 'error',
         'jsx-a11y/anchor-is-valid': 'error',
@@ -119,6 +118,7 @@ module.exports = {
           'error',
           {
             tr: ['none', 'presentation'],
+            canvas: ['img'],
           },
         ],
         'jsx-a11y/no-noninteractive-element-interactions': [
@@ -165,6 +165,7 @@ module.exports = {
             li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
             table: ['grid'],
             td: ['gridcell'],
+            fieldset: ['radiogroup', 'presentation'],
           },
         ],
         'jsx-a11y/no-noninteractive-tabindex': [
@@ -206,7 +207,6 @@ module.exports = {
         },
       },
       rules: {
-        'jsx-a11y/accessible-emoji': 'error',
         'jsx-a11y/alt-text': 'error',
         'jsx-a11y/anchor-has-content': 'error',
         'jsx-a11y/anchor-is-valid': 'error',
